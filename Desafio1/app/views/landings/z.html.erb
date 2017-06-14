@@ -1,0 +1,26 @@
+<!-- Ubicando  links -->
+
+
+
+<h1>Landings#z</h1>
+<p>Find me in app/views/landings/z.html.erb</p>
+
+<%= @mensaje %>
+
+<ul>
+	<% @val.each do |thing| %>
+		<li><%= thing %></li>
+	<% end %> 
+
+</ul>
+
+<%#= @valor %>
+<%# @val = 10 %>
+<%#= @val %>
+
+<img src="<%= asset_path 'images.jpg' %>" alt="">
+
+
+<!-- aqui las clases sin con comillas class: "mi-clase", id: "" -->
+<%= image_tag "images.jpg" %>
+

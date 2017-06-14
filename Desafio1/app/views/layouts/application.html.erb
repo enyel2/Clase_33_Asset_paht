@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Desafio1</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body class= '<%= "#{params[:controller]} #{params[:action]}" %>' >
+  	<!-- <p> el aplication lo que esciba aqui aparece en cualquier pagina </p> -->
+    
+	<!-- asi se aplica para todo el proyecto -->
+	<ul>
+		<li><%= link_to("Link z", landings_z_path)%> </li>
+		<li><%= link_to("Link y", landings_y_path)%> </li>
+		<li><%= link_to("Link x", landings_x_path)%> </li>
+		<li><%= link_to("Link discounts", landings_discounts_path)%> </li>
+	</ul>
+
+		<%= yield %>
+	</body>
+</html>
+
